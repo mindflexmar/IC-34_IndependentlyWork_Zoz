@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Самостійні роботи</title>
+</head>
+<body>
+    <header>
+        <h1>Що таке HTML?</h1>
+        <p>HTML (Hypertext Markup Language) - це мова розмітки, яка використовується для створення веб-сторінок.</p>
+    </header>
+
+    <section>
+        <h2>Основні приклади HTML</h2>
+        <p>Ось основний приклад структури HTML-документа:</p>
+        <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+            &lt;head&gt;
+                &lt;title&gt;Title of the document&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                Content of the document......
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </pre>
+    </section>
+
+    <section>
+        <h2>HTML Елементи та Атрибути</h2>
+        <p>HTML складається з елементів, які використовуються для розмітки контенту на веб-сторінках.</p>
+    
+    
+    <ul>
+        <li>Елемент параграфу: <code>&lt;p&gt;</code></li>
+        <li>Елемент посилання: <code>&lt;a&gt;</code></li>
+        <li>Елемент поділу: <code>&lt;div&gt;</code></li>
+    </ul>
+
+    <h2>Приклад HTML атрибутів</h2>
+    
+    <p>Наприклад, атрибут <code>href</code> у тегу <code>&lt;a&gt;</code>:</p>
+    <a href="https://w3schoolsua.github.io/html/html_elements.html" target="_blank">Детальніше про HTML елементи: тут</a><br>
+    <a href="https://w3schoolsua.github.io/html/html_attributes.html" target="_blank">Детальніше про HTML атрибути: тут</a>
+    <h3>Додаткові приклади атрибутів:</h3>
+    <p style="color:yellow;">Цей параграф має жовтий колір завдяки атрибуту style.</p>
+    <button onclick="alert('Ви натиснули кнопку!')">Натисніть мене</button>
+    <div id="myDiv" class="example-class" style="border: 1px solid black; padding: 10px;">
+        Це елемент <code>&lt;div&gt;</code> з атрибутами <code>id</code> та <code>class</code>.
+    </div>
+  
+    </section>
+
+    <section>
+        <h2>HTML Зображення</h2>
+        <p>Зображення додаються за допомогою тегу &lt;img src="url" alt="опис"&gt;.</p>
+        <img src="https://animals.pibig.info/uploads/posts/2023-04/1680538487_animals-pibig-info-p-shotlandskaya-korova-zhivotnie-pinterest-1.jpg" alt="Корова" width="400" height="300">
+        <img src="Fake.jpg" alt="Корова">
+    </section>
+
+    <section>
+        <h2>HTML Посилання</h2>
+        <h2>Звичайне посилання</h2>
+    <p><a href="https://w3schools.com" target="_blank">Перейти на W3Schools</a></p>
+
+    <h2>Посилання з відкриттям у новій вкладці</h2>
+    <p><a href="https://google.com" target="_blank">Відкрийте Google в новій вкладці</a></p>
+
+    <h2>Якірне посилання</h2>
+    <p><a href="#section1">Перейти до Розділу 1</a></p>
+    <h2>Внутрішнє посилання</h2>
+    <p><a href="about.html">Перейти на сторінку "Про нас"</a></p>
+    <h1>HTML Посилання з GIF</h1>
+    
+    
+    <p>Натисніть на GIF, щоб перейти на інший сайт:</p>
+    <a href="https://uk.wikipedia.org/wiki/%D0%9A%D0%BE%D1%80%D0%BE%D0%B2%D0%B0" target="_blank">
+        <img src="https://i.gifer.com/QRt.gif" alt="Перейти на інший сайт" style="width:300px; height:auto;">
+    </a>
+    
+    <p>Натиснувши на зображення вище, ви перейдете на Example.com.</p>
+
+    <h2>Посилання з підказкою</h2>
+    <p><a href="https://example.com" title="Приклад сайту">Приклад посилання з підказкою</a></p>
+
+    
+    <h2>Email-посилання</h2>
+    <p><a href="mailto:example@example.com">Надіслати лист на example@example.com</a></p>
+
+
+    <h2>Телефонне посилання</h2>
+    <p><a href="tel:+1234567890">Зателефонувати: +1234567890</a></p>
+
+    
+    <h2>Посилання на завантаження файлу</h2>
+    <p><a href="sample.pdf" download>Завантажити PDF-файл</a></p>
+
+    
+    <h2>Посилання із кольоровою стилізацією</h2>
+    <p><a href="https://yahoo.com" style="color: red;">Червоне посилання на Yahoo</a></p>
+    <p><a href="https://bing.com" style="color: green;">Зелене посилання на Bing</a></p>
+
+   
+    <h2 id="section1">Розділ 1</h2>
+    <p>Це розділ 1, до якого можна перейти, натиснувши на якорне посилання вище.</p>
+        
+    </section>
+
+    <section>
+        <h2>HTML Таблиці</h2>
+        <p>Таблиці створюються з використанням тегів &lt;table&gt;, &lt;tr&gt;, &lt;th&gt; та &lt;td&gt;.</p>
+        <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+                <th>Occupation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Person_1</td>
+                <td>38</td>
+                <td>Chicago</td>
+                <td>Lawyer</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Person_2</td>
+                <td>63</td>
+                <td>Los Angeles</td>
+                <td>Engineer</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Person_3</td>
+                <td>39</td>
+                <td>Phoenix</td>
+                <td>Nurse</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Person_4</td>
+                <td>49</td>
+                <td>Los Angeles</td>
+                <td>Engineer</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Person_5</td>
+                <td>48</td>
+                <td>Philadelphia</td>
+                <td>Engineer</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Person_6</td>
+                <td>45</td>
+                <td>Los Angeles</td>
+                <td>Artist</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>Person_7</td>
+                <td>29</td>
+                <td>Phoenix</td>
+                <td>Doctor</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>Person_8</td>
+                <td>47</td>
+                <td>New York</td>
+                <td>Engineer</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>Person_9</td>
+                <td>50</td>
+                <td>Chicago</td>
+                <td>Doctor</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>Person_10</td>
+                <td>57</td>
+                <td>Los Angeles</td>
+                <td>Teacher</td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>Person_11</td>
+                <td>34</td>
+                <td>Los Angeles</td>
+                <td>Nurse</td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>Person_12</td>
+                <td>48</td>
+                <td>Los Angeles</td>
+                <td>Teacher</td>
+              </tr>
+              <tr>
+                <td>13</td>
+                <td>Person_13</td>
+                <td>33</td>
+                <td>Chicago</td>
+                <td>Engineer</td>
+              </tr>
+              <tr>
+                <td>14</td>
+                <td>Person_14</td>
+                <td>52</td>
+                <td>Houston</td>
+                <td>Doctor</td>
+              </tr>
+              <tr>
+                <td>15</td>
+                <td>Person_15</td>
+                <td>29</td>
+                <td>New York</td>
+                <td>Teacher</td>
+              </tr>
+              <tr>
+                <td>16</td>
+                <td>Person_16</td>
+                <td>51</td>
+                <td>Los Angeles</td>
+                <td>Engineer</td>
+              </tr>
+              <tr>
+                <td>17</td>
+                <td>Person_17</td>
+                <td>65</td>
+                <td>Chicago</td>
+                <td>Teacher</td>
+              </tr>
+              <tr>
+                <td>18</td>
+                <td>Person_18</td>
+                <td>58</td>
+                <td>Houston</td>
+                <td>Nurse</td>
+              </tr>
+              <tr>
+                <td>19</td>
+                <td>Person_19</td>
+                <td>31</td>
+                <td>New York</td>
+                <td>Doctor</td>
+              </tr>
+              <tr>
+                <td>20</td>
+                <td>Person_20</td>
+                <td>49</td>
+                <td>Houston</td>
+                <td>Artist</td>
+              </tr>
+            </tbody>
+          </table>
+          
+    </section>
+
+    <section>
+        <h2>HTML Списки</h2>
+        <p>Списки можуть бути невпорядкованими (&lt;ul&gt;) або впорядкованими (&lt;ol&gt;).</p>
+        <h2>Невпорядкований список</h2>
+        <ul>
+            <li>Кава</li>
+            <li>Чай</li>
+            <li>Молоко</li>
+        </ul>
+    
+        
+        <h2>Впорядкований список</h2>
+        <ol>
+            <li>Перший пункт</li>
+            <li>Другий пункт</li>
+            <li>Третій пункт</li>
+        </ol>
+    
+        
+        <h2>Вкладені списки</h2>
+        <ul>
+            <li>Фрукти
+                <ul>
+                    <li>Яблуко</li>
+                    <li>Банан</li>
+                    <li>Апельсин</li>
+                </ul>
+            </li>
+            <li>Овочі
+                <ul>
+                    <li>Морква</li>
+                    <li>Броколі</li>
+                    <li>Горох</li>
+                </ul>
+            </li>
+        </ul>
+    
+        
+        <h2>Описовий список</h2>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Мова розмітки гіпертексту, яка використовується для створення веб-сторінок.</dd>
+            <dt>CSS</dt>
+            <dd>Каскадні таблиці стилів, використовуються для оформлення HTML-елементів.</dd>
+            <dt>JavaScript</dt>
+            <dd>Мова програмування, яка додає інтерактивність веб-сторінкам.</dd>
+        </dl>
+    </section>
+
+    <section>
+        <h2>HTML Форми</h2>
+        <p>Форми дозволяють збирати дані від користувача. Приклади форм:</p>
+        <form action="/submit" method="post">
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Електронна пошта:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <input type="submit" value="Відправити">
+        </form>
+        
+    </section>
+
+<form>
+    <div class="form-group">
+        <label for="pizs">I love pizs</label>
+        <input type="checkbox" id="cat" name="pet" value="cat">
+    </div>
+    <div class="form-group">
+        <label for="cheese">I love cheese</label>
+        <input type="checkbox" id="dog" name="pet" value="dog">
+    </div>
+    <div class="form-group">
+        <label>Choose your favorite color:</label>
+        <input type="radio" id="red" name="color" value="red">
+        <label for="red">Red</label>
+        <input type="radio" id="blue" name="color" value="blue">
+        <label for="blue">Blue</label>
+    </div>
+   
+<h2>Проста форма</h2>
+<form action="/submit-form" method="post">
+    <label for="name">Ім’я:</label>
+    <input type="text" id="name" name="name" required>
+    <input type="submit" value="Відправити">
+</form>
+
+
+<h2>Різні типи вводу</h2>
+<form action="/submit-form" method="post">
+    <label for="email">Електронна пошта:</label>
+    <input type="email" id="email" name="email"><br><br>
+
+    <label for="password">Пароль:</label>
+    <input type="password" id="password" name="password"><br><br>
+
+    <label for="date">Дата народження:</label>
+    <input type="date" id="date" name="date"><br><br>
+
+    <label for="color">Улюблений колір:</label>
+    <input type="color" id="color" name="color"><br><br>
+
+    <label for="range">Вік (0-100):</label>
+    <input type="range" id="range" name="range" min="0" max="100"><br><br>
+
+    <input type="submit" value="Відправити">
+</form>
+
+<h2>Форма з перемикачами</h2>
+<form action="/submit-form" method="post">
+    <p>Стать:</p>
+    <input type="radio" id="male" name="gender" value="male" checked>
+    <label for="male">Чоловіча</label><br>
+
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Жіноча</label><br>
+
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Інше</label><br><br>
+
+    <input type="submit" value="Відправити">
+</form>
+
+
+<h2>Форма з прапорцями</h2>
+<form action="/submit-form" method="post">
+    <p>Виберіть свої хобі:</p>
+    <input type="checkbox" id="sports" name="hobby" value="sports">
+    <label for="sports">Спорт</label><br>
+
+    <input type="checkbox" id="music" name="hobby" value="music">
+    <label for="music">Музика</label><br>
+
+    <input type="checkbox" id="reading" name="hobby" value="reading">
+    <label for="reading">Читання</label><br><br>
+
+    <input type="submit" value="Відправити">
+</form>
+
+<h2>Форма з випадаючим списком</h2>
+<form action="/submit-form" method="post">
+    <label for="country">Оберіть країну:</label>
+    <select id="country" name="country">
+        <option value="ua">Україна</option>
+        <option value="us">США</option>
+        <option value="uk">Великобританія</option>
+        <option value="de">Німеччина</option>
+    </select><br><br>
+
+    <input type="submit" value="Відправити">
+</form>
+
+<h2>Форма з текстовою областю</h2>
+<form action="/submit-form" method="post">
+    <label for="message">Ваше повідомлення:</label><br>
+    <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+    <input type="submit" value="Відправити">
+</form>
+
+<h2>Форма з кнопкою завантаження файлу</h2>
+<form action="/upload" method="post" enctype="multipart/form-data">
+    <label for="file">Оберіть файл для завантаження:</label>
+    <input type="file" id="file" name="file"><br><br>
+
+    <input type="submit" value="Завантажити">
+</form>
+
+<h2>Форма з прихованим полем</h2>
+<form action="/submit-form" method="post">
+    <input type="hidden" name="userID" value="12345">
+    <label for="username">Ім’я користувача:</label>
+    <input type="text" id="username" name="username" required><br><br>
+
+    <input type="submit" value="Відправити">
+</form>
+
+</body>
+</html>
